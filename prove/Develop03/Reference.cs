@@ -41,7 +41,7 @@ class Reference
 
         public string GetReferenceString()
         {
-            string referenceString = book + " " + chapter + ":" + startVerse;
+            string referenceString = Book + " " + Chapter + ":" + StartVerse;
 
             if (endVerse > 0)
             {
@@ -49,5 +49,9 @@ class Reference
             }
 
             return referenceString;
+        }
+        public override string ToString()
+        {
+            return GetReferenceString();
         }
     }

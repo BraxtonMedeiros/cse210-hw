@@ -41,6 +41,16 @@ class Scripture
         int verseIndex = rnd.Next(verses.Count);
         int wordIndex = rnd.Next(verses[verseIndex].Count);
         verses[verseIndex][wordIndex].IsShown = false;
+
+        rnd = new Random();
+        verseIndex = rnd.Next(verses.Count);
+        wordIndex = rnd.Next(verses[verseIndex].Count);
+        verses[verseIndex][wordIndex].IsShown = false;
+
+        rnd = new Random();
+        verseIndex = rnd.Next(verses.Count);
+        wordIndex = rnd.Next(verses[verseIndex].Count);
+        verses[verseIndex][wordIndex].IsShown = false;
     }
 
     public string GetRenderedText()
